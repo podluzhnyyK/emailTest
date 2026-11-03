@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="x-apple-disable-message-reformatting">
+  <meta name="format-detection" content="telephone=no, address=no, email=no, date=no, url=no">
+  <!--[if mso]><style type="text/css">table {mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;}td {mso-line-height-rule: exactly !important;}@-ms-viewport {width: device-width !important;}</style><![endif]-->
+  <!--[if gte mso 9]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]-->
+  <style type="text/css">
+    /* общие стили */
+    html,
+    body {
+      -webkit-text-size-adjust: 100% !important;
+      -ms-text-size-adjust: 100% !important;
+    }
+
+    table {
+      border-collapse: collapse !important;
+      border-spacing: 0px !important;
+    }
+
+    [owa] .owa-width {
+      max-width: 1200px !important;
+    }
+
+    /* макет */
+    @media screen and (max-width: 640px),
+    screen and (max-device-width: 640px) {
+      .layout {
+        min-width: 480px !important;
+      }
+      .bg-white {
+        background: #FFFFFF !important;
+      }
+    /* шапка */
+      .h_perfume {
+        display: none !important;
+        mso-hide: all !important;
+      }
+      .img270 {
+        width: 225px !important;
+      }
+    }
+
+    @media screen and (max-width: 480px),
+    screen and (max-device-width: 480px) {
+      .layout {
+        min-width: 375px !important;
+      }
+    }
+
+    @media screen and (max-width: 560px),
+    screen and (max-device-width: 560px) {
+      .h_makeup {
+        display: none !important;
+        mso-hide: all !important;
+      }
+      .img270 {
+        width: 200px !important;
+      }
+			.b1 {
+				width: 100% !important;
+			}
+    }
+    /* товары */
+    @media screen and (max-width: 530px),
+    screen and (max-device-width: 530px) {
+      .p-type {
+        font-size: 7px !important;
+        line-height: 1.6 !important;
+      }
+
+      .p-name {
+        font-size: 14px !important;
+        line-height: 1.3 !important;
+      }
+
+      .p-price {
+        font-size: 14px !important;
+        line-height: 1 !important;
+      }
+
+    }
+
+    @media screen and (max-width: 490px),
+    screen and (max-device-width: 490px) {
+      .h {
+        width: auto !important;
+      }
+
+      .h_wrapper {
+        padding: 0 !important;
+      }
+
+      .h_container {
+        padding-top: 30px !important;
+        padding-bottom: 25px !important;
+        text-align: center !important;
+      }
+
+      .h_item {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        font-size: 12px !important;
+      }
+
+      .h_logo_d {
+        display: none !important;
+        mso-hide: all !important;
+      }
+
+      .h_logo_m {
+        display: inline-block !important;
+        mso-hide: none !important;
+        padding-bottom: 24px !important;
+      }
+    }
+
+    /* картинки */
+    @media screen and (max-width: 480px),
+    screen and (max-device-width: 480px) {
+      .img_d {
+        display: none !important;
+        mso-hide: all !important;
+      }
+
+      .img_m {
+        display: block !important;
+        mso-hide: none !important;
+      }
+      .br {
+        display: block !important;
+  /*       width: 335px !important;
+        width: 100% !important; */
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        text-align: left !important;
+      }
+
+      .last_br_b {
+        padding-bottom: 0 !important;
+      }
+
+      .hidden {
+        display: none !important;
+      }
+
+      .padd-bottom {
+        padding-bottom: 10px !important;
+      }
+
+      .message {
+        margin-top: 20px !important;
+        font-size: 18px !important;
+        line-height: 1.4 !important;
+      }
+      .message-2 {
+        font-size: 16px !important;
+      }
+
+      .p_d {
+        display: none !important;
+        mso-hide: all !important;
+      }
+
+      .p_m {
+        display: table !important;
+        mso-hide: none !important;
+      }
+
+      .b_wrapper {
+        padding-bottom: 90px !important;
+      }
+      .mob_title {
+        padding-top: 17px !important;
+      }
+      .better_subtitle {
+        padding-top: 80px !important;
+        padding-bottom: 20px !important;
+      }
+      .how_it_works {
+        padding-bottom: 10px !important;
+      }
+      .last_par {
+        margin-top: 20px !important;
+        font-size: 14px !important;
+        line-height: 1.4 !important;
+      }
+      .p-2 {
+      }
+      .br_padd {
+        /* padding: 0 10px !important; */
+        padding: 0 22px !important;
+      }
+      .br_b {
+/*         padding-bottom: 60px !important; */
+      }
+
+      /* блок с промокодом */
+			.m2 {
+				font-size: 16px !important;
+				line-height: 1.3 !important;
+				margin-bottom: 15px !important;
+			}
+
+			.m3 {
+				font-size: 35px !important;
+				line-height: 1 !important;
+        margin: 12.5px 0 !important;
+			}
+
+			.m4 {
+				font-size: 16px !important;
+				line-height: 1.3 !important;
+			}
+
+			.m5 {
+				line-height: 1.4 !important;
+				letter-spacing: 0 !important;
+				margin-bottom: 0 !important;
+				padding: 0 20px !important;
+				margin-top: 20px !important;
+			}
+
+    }
+
+    /* блок о доставке */
+    @media screen and (max-width: 480px),
+    screen and (max-device-width: 480px) {
+      .table_d {
+        display: none !important;
+        mso-hide: all !important;
+      }
+
+      .table_m {
+        display: table !important;
+        mso-hide: none !important;
+      }
+      .hide {
+        display: none !important;
+        mso-hide: all !important;
+      }
+      .show {
+        display: inline-block !important;
+        mso-hide: none !important;
+      }
+      .promo_padd {
+        padding: 0 30px !important;
+      }
+
+    }
+
+    /* подвал */
+    @media screen and (max-width: 560px),
+    screen and (max-device-width: 560px) {
+      .f_ask {
+        padding-top: 35px !important;
+        padding-bottom: 30px !important;
+      }
+
+      .f_ask_text {
+        font-size: 15px !important;
+        line-height: 1.6 !important;
+        letter-spacing: normal !important;
+        color: #E6E6E6 !important;
+      }
+
+      .f_ask_text-br {
+        display: block !important;
+      }
+
+      .f_container {
+        padding-top: 30px !important;
+        padding-bottom: 60px !important;
+      }
+
+      .f_icons_d {
+        display: none !important;
+        mso-hide: all !important;
+      }
+
+      .f_icons_m {
+        display: table !important;
+        mso-hide: none !important;
+      }
+
+      .f_contacts {
+        padding-top: 0 !important;
+        text-align: center !important;
+        display: block !important;
+      }
+
+      .f_phone_d {
+        display: none !important;
+        mso-hide: all !important;
+      }
+
+      .f_phone_m {
+        display: block !important;
+        mso-hide: none !important;
+      }
+
+      .f_phone_number {
+        font-size: 30px !important;
+      }
+
+      .f_links {
+        padding-top: 35px !important;
+        text-align: center !important;
+        display: block !important;
+      }
+
+      .f_link_wrapper_1,
+      .f_link_wrapper_2 {
+        margin-bottom: 12px !important;
+        font-size: 14px !important;
+      }
+
+      .f_link_wrapper_3 {
+        font-size: 14px !important;
+      }
+
+      .f_link {
+        color: #B3B3B3 !important;
+      }
+    }
+  </style>
+</head>
+<body width="100%" style="margin: 0px !important; padding: 0px !important; background-color: #F4F4F4;">
+  <div class="titleJS" style="mso-hide: all; font-size: 1px; line-height: 1px; color: #F4F4F4; font-family: sans-serif; max-width: 0px; max-height: 0px; opacity: 0; overflow: hidden;"> Смотри анализ от Яндекс.Практикума и получи скидку на образовательный курс </div>
+  <div style="mso-hide: all; font-size: 1px; line-height: 1px; color: #F4F4F4; font-family: sans-serif; max-width: 0px; max-height: 0px; opacity: 0; overflow: hidden;">
+    &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+  </div>
+  <center>
+    <table class="layout owa-width bg-white" width="100%" border="0" cellpadding="0" cellspacing="0" style="min-width: 640px; background-position: center top; background-repeat: no-repeat;">
+      <!-- ШАПКА -->
+      <tr>
+        <td align="center" valign="top" style="background-color: #F4F4F4;">
+          <!--[if mso]><table border="0" width="1000" cellpadding="0" cellspacing="0"><tr><td align="center" width="1000"><![endif]-->
+          <table width="100%" border="0" cellpadding="0" cellspacing="0" style="max-width: 800px; background-color: #ffffff;">
+            <tr>
+              <td class="h_wrapper" align="center" valign="top" style="padding: 0 20px;">
+                <!--[if mso]><table border="0" width="740" cellpadding="0" cellspacing="0"><tr><td align="center" width="740"><![endif]-->
+                <table class="h" width="100%" border="0" cellpadding="0" cellspacing="0" style="max-width: 600px;">
+                  <tr>
+                    <td class="h_container" align="center" valign="top" style="padding: 27px 0;">
+                      <!--[if !mso]-->
+                      <a class="h_logo_m" href="https://goldapple.ru/" target="_blank" style="display: none; mso-hide: all;">
+                        <img src="https://email-images.mindbox.ru/406575/3029846/2.png" alt="Золотое Яблоко" width="26" style="display: block;">
+                      </a>
+                      <!--[endif]-->
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td class="h_logo_d" style="padding-right:95px;">
+                            <a href="https://goldapple.ru/" target="_blank">
+                              <img src="https://email-images.mindbox.ru/406575/3029846/2.png" alt="Золотое Яблоко" width="27" height="28" style="display: block;">
+                            </a>
+                          </td>
+                          <td class="h_item" style="font-size: 14px; font-family: Helvetica, Arial, sans-serif; white-space: nowrap; padding-right: 25px;">
+                            <a href="https://goldapple.ru/novinki" target="_blank" style="color: #000000; text-decoration: none;"> новинки </a>
+                          </td>
+                          <td class="h_item" style="font-size: 14px; font-family: Helvetica, Arial, sans-serif; white-space: nowrap; padding-right: 25px;">
+                            <a href="https://goldapple.ru/azija" target="_blank" style="color: #000000; text-decoration: none;"> азия </a>
+                          </td>
+                          <td class="h_item" style="font-size: 14px; font-family: Helvetica, Arial, sans-serif; white-space: nowrap; padding-right: 25px;">
+                            <a href="https://goldapple.ru/uhod" target="_blank" style="color: #000000; text-decoration: none;"> уход </a>
+                          </td>
+                          <td class="h_item h_makeup" style="font-size: 14px; font-family: Helvetica, Arial, sans-serif; white-space: nowrap; padding-right: 25px;">
+                            <a href="https://goldapple.ru/makijazh" target="_blank" style="color: #000000; text-decoration: none;"> макияж </a>
+                          </td>
+                          <td class="h_item h_perfume" style="font-size: 14px; font-family: Helvetica, Arial, sans-serif; white-space: nowrap; padding-right: 25px;">
+                            <a href="https://goldapple.ru/parfjumerija" target="_blank" style="color: #000000; text-decoration: none;"> парфюм </a>
+                          </td>
+                          <td class="h_item" style="font-size: 14px; font-family: Helvetica, Arial, sans-serif; white-space: nowrap; padding-right: 25px;">
+                            <a href="https://goldapple.ru/organika" target="_blank" style="color: #000000; text-decoration: none;"> органика </a>
+                          </td>
+                          <td class="h_item" width="100%" style="font-size: 14px; font-family: Helvetica, Arial, sans-serif; white-space: nowrap;">
+                            <a href="https://goldapple.ru/brands" target="_blank" style="color: #000000; text-decoration: none;">
+                              <span style="color: #000000;"> бренды </span>
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+                <!--[if mso]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </table>
+          <!--[if mso]></td></tr></table><![endif]-->
+        </td>
+      </tr>
+      <!-- БАННЕР -->
+      <tr>
+        <td align="center" valign="top" style="background-color: #F4F4F4;">
+          <!--[if mso]><table border="0" width="1000" cellpadding="0" cellspacing="0" align="center"><tr><td align="center" width="1000"><![endif]-->
+          <table width="100%" border="0" cellpadding="0" cellspacing="0" style="max-width: 800px; background-color: #FFFFFF;">
+            <tr>
+              <td align="center">
+                <a href="https://goldapple.ru" target="_blank">
+                  <img class="img_d" src="https://email-images.mindbox.ru/Goldappleru/20482/c7277821-9da5-4837-9b3a-41d85e6cea98.png" alt="Как мы развиваем наше приложение?" width="800" style="width: 100%; height: auto; display: block;">
+                  <!--[if !mso]-->
+                  <img class="img_m" src="https://email-images.mindbox.ru/Goldappleru/20482/b6dde127-4d21-4d4f-86cf-445c540b4b79.png" alt="Как мы развиваем наше приложение?" width="100%" height="auto" style="display: none; mso-hide: all;">
+                  <!--[endif]-->
+                </a>
+              </td>
+            </tr>
+          </table>
+          <!--[if mso]></td></tr></table><![endif]-->
+        </td>
+      </tr>
+      <tr>
+        <td align="center" valign="top" style="background-color: #F4F4F4;">
+          <!--[if mso]><table border="0" width="1000" cellpadding="0" cellspacing="0"><tr><td align="center" width="1000"><![endif]-->
+          <table width="100%" border="0" cellpadding="0" cellspacing="0" style="max-width: 800px; background-color: #ffffff;">
+            <tr>
+              <td align="center" valign="top" style="padding: 0 8px;">
+                <!--[if mso]><table border="0" width="754" cellpadding="0" cellspacing="0"><tr><td align="center" width="754"><![endif]-->
+                <table width="100%" border="0" cellpadding="0" cellspacing="0" style="max-width: 624px;">
+                  <!-- СООБЩЕНИЕ -->
+                  <tr>
+                    <td align="left">
+                      <p class="message" style="font-size: 19.9px; font-weight: 400; line-height: 28px; color: #000000; font-family: Helvetica, Arial, sans-serif; margin: 30px 12px 60px;">Выберите любые товары <span style="white-space: nowrap;">в&nbsp;интернет-</span>магазине Золотое Яблоко, оплатите покупки картой &laquo;Мир&raquo; <span style="white-space: nowrap;">и&nbsp;получите</span> <!--[if !mso]>--><span style="white-space: nowrap; font-weight: 500; color: #FF4B9A;">кешбэк&nbsp;10%</span><!--[endif]--><!--[if mso]><span style="white-space: nowrap; font-weight: 700; color: #FF4B9A;">кешбэк&nbsp;10%</span><![endif]--> <span style="white-space: nowrap;">на&nbsp;вашу</span> банковскую карту!</p>
+                    </td>
+                  </tr>
+                  <!-- ЗАГОЛОВОК КАК РАБОТАЮТ КАРТЫ -->
+                  <tr>
+                    <td class="how_it_works" align="center" style="padding: 0 12px 30px;">
+                      <img class="img_d" src="https://email-images.mindbox.ru/Goldappleru/20482/bdb4e21b-b124-470f-a558-c59300d9edd6.png" alt="Как это работает'" width="600" style="width: 100%; height: auto; display: block;">
+                      <!--[if !mso]-->
+                      <img class="img_m" src="https://email-images.mindbox.ru/Goldappleru/20482/3a5c1ddd-13ab-4088-86ff-6b97157ba646.png" alt="Как это работает'" width="100%" height="auto" style="display: none; mso-hide: all;">
+                      <!--[endif]-->
+                    </td>
+                  </tr>
+                  <!-- ПУНКТЫ -->
+                  <tr>
+                    <td valign="top">
+                      <!-- 1 -->
+                      <center>
+                        <table class="br" width="100%" border="0" cellpadding="0" cellspacing="0">
+                          <!-- МОБИЛКА -->
+                          <!--[if !mso]-->
+                          <tr>
+                            <td class="br padd-bottom br_padd" style="display: none; mso-hide: all; padding-bottom: 30px;">
+                              <img src="https://email-images.mindbox.ru/Goldappleru/20482/bc6bcc61-e5b3-419a-bd5f-3c2b9b30a37b.png" alt="GiftCards" width="100%" style="width: 100%; height: auto; display: block;">
+                            </td>
+                          </tr>
+                          <!--[endif]-->
+                          <tr class="br br_b br_padd">
+                            <td class="br" style="vertical-align: middle; text-align: left; padding: 0 15px 0 12px;">
+                              <div class="mob_title">
+                                <img class="img_d" src="https://email-images.mindbox.ru/Goldappleru/20482/a9eb38ae-fbc7-4b65-9205-3ca9c62afd20.png" alt="Пункт 1" width="100%" style="width: 100%; height: auto; display: block;">
+                                <!--[if !mso]-->
+                                <img class="img_m" src="https://email-images.mindbox.ru/Goldappleru/20482/3ab27669-300c-4b35-a19b-3e3958ad1309.png" alt="Пункт 1" width="100%" style="display: none; mso-hide: all;">
+                                <!--[endif]-->
+                              </div>
+                              <div>
+                                <img class="img_d" src="https://email-images.mindbox.ru/Goldappleru/20482/a9eb38ae-fbc7-4b65-9205-3ca9c62afd20.png" alt="Дизайн" width="100%" style="width: 100%; height: auto; display: block;">
+                                <!--[if !mso]-->
+                                <img class="img_m" src="https://email-images.mindbox.ru/Goldappleru/20482/3ab27669-300c-4b35-a19b-3e3958ad1309.png" alt="Дизайн" width="100%" style="display: none; mso-hide: all;">
+                                <!--[endif]-->
+                              </div>
+                              <p class="p-2" style="font-size: 16px; line-height: 22.4px; font-family: Helvetica, Arial, sans-serif; margin: 13px 0 30px; font-weight: 300; color: #000000; font-family: Helvetica, Arial, sans-serif;">Дизайнеры помогают вовлекать пользователя <span style="white-space: nowrap;">в&nbsp;процесс</span> покупки. <span style="white-space: nowrap;">В&nbsp;приложении</span> понятный <span style="white-space: nowrap;">и&nbsp;удобный</span> <span style="white-space: nowrap;">таб-бар</span> &mdash; панель вкладок <span style="white-space: nowrap;">в&nbsp;нижней</span> части экрана. <span style="white-space: nowrap;">В&nbsp;фильтрах</span> поиска есть информация <span style="white-space: nowrap;">об&nbsp;экспресс-</span>доставке, что удобно <span style="white-space: nowrap;">при&nbsp;срочном</span> заказе.
+                              </p>
+                              <table border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                  <td style="height: 2px; width: 150px;" bgcolor="#DCFF00">
+                                  </td>
+                                </tr>
+                              </table>
+                              <p class="p-2" style="font-size: 16px; line-height: 22.4px; font-family: Helvetica, Arial, sans-serif; margin: 15px 0 25px; font-weight: 300; color: #000000; font-family: Helvetica, Arial, sans-serif; font-style: italic;">&quot; <span style="white-space: nowrap;">В&nbsp;карточке</span> товара видно, что дизайнеры интерфейса хорошо поработали <span style="white-space: nowrap;">и&nbsp;упаковали</span> детальное описание товара <span style="white-space: nowrap;">в&nbsp;компактное</span> раскрывающееся <span style="white-space: nowrap;">меню&nbsp;&mdash;</span> занимает мало места <span style="white-space: nowrap;">и&nbsp;всегда</span> под рукой.&quot;
+                              </p>
+                              <table border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                  <td valign="top" style="padding-top: 3px; padding-right: 10px;">
+                                    <img src="https://email-images.mindbox.ru/Goldappleru/24527/37b4f8cc-7f68-40d1-90b4-c55d95a906a1.png" alt="" width="25" style="width: 25px; display: block; height: auto;">
+                                  </td>
+                                  <td valign="top">
+                                    <p style="margin: 0 0 3px; font-size: 16px; line-height: 19px; color: #000000; font-style: italic; font-weight: 700;">Александр Кириллов</p>
+                                    <p style="margin: 0 0 3px; font-size: 13.5px; line-height: 19px; color: #000000; font-style: italic; font-weight: 300;">наставник на курсе «Дизайнер интерфейсов»</p>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                            <td class="hidden" valign="top" style="padding: 0 12px 0 15px;">
+                              <img class="img270" src="https://email-images.mindbox.ru/Goldappleru/20482/bd39865b-3841-4aff-924b-1ef36ccd3c1f.png" alt="GiftCards" width="250" style="width: 250px; height: auto; display: block;">
+                            </td>
+                          </tr>
+                          <!--[if !mso]--><tr><td height="80"></td></tr><!--[endif]-->
+                          <!--[if mso]><tr><td height="80"></td></tr><![endif]-->
+                        </table>
+                      </center>
+                      <!-- 2 -->
+                      <center>
+                        <table class="br" width="100%" border="0" cellpadding="0" cellspacing="0">
+                          <!-- МОБИЛКА -->
+                          <!--[if !mso]-->
+                          <tr>
+                            <td class="br padd-bottom br_padd" style="display: none; mso-hide: all; padding-bottom: 40px;">
+                              <div>
+                                <img src="https://email-images.mindbox.ru/Goldappleru/20482/8868234e-63f3-420a-8063-aecf49cb9e0e.png" alt="GiftCards" width="100%" style="width: 100%; height: auto; display: block;">
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="br br_padd" style="display: none; mso-hide: all;">
+                              <div class="mob_title">
+                                <img class="img_m" src="https://email-images.mindbox.ru/Goldappleru/20482/1950ed67-d9dc-4078-a01d-cc1e927cdfb0.png" alt="Пункт 2" width="100%" style="display: none; mso-hide: all;">
+                              </div>
+                              <div>
+                                <img class="img_m" src="https://email-images.mindbox.ru/Goldappleru/20482/1950ed67-d9dc-4078-a01d-cc1e927cdfb0.png" alt="Разработка" width="100%" style="display: none; mso-hide: all;">
+                              </div>
+                              <p class="p-2" style="font-size: 16px; line-height: 22.4px; font-family: Helvetica, Arial, sans-serif; margin: 13px 0 30px; font-weight: 300; color: #000000; font-family: Helvetica, Arial, sans-serif;">Мобильные разработчики пишут код <span style="white-space: nowrap;">и&nbsp;добавляют</span> полезные функции. <span style="white-space: nowrap;">У&nbsp;нас</span> уникальный дизайн, красивые анимации, омниканальная программа лояльности <span style="white-space: nowrap;">и&nbsp;другие</span> фишки.
+                              </p>
+                              <table border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                  <td style="height: 2px; width: 150px;" bgcolor="#DCFF00">
+                                  </td>
+                                </tr>
+                              </table>
+                              <p class="p-2" style="font-size: 16px; line-height: 22.4px; font-family: Helvetica, Arial, sans-serif; margin: 15px 0 25px; font-weight: 300; color: #000000; font-family: Helvetica, Arial, sans-serif; font-style: italic;">&quot; Между экранами плавные переходы, грамотно реализована работа <span style="white-space: nowrap;">с&nbsp;навигацией</span> <span style="white-space: nowrap;">по&nbsp;кнопке</span> &laquo;назад&raquo; <span style="white-space: nowrap;">и&nbsp;много</span> дополнительных функций. Например, сканер штрих-кодов <span style="white-space: nowrap;">и&nbsp;интеграция</span> карт. &quot;
+                              </p>
+                              <table border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                  <td valign="top" style="padding-top: 3px; padding-right: 10px;">
+                                    <img src="https://email-images.mindbox.ru/Goldappleru/24527/37b4f8cc-7f68-40d1-90b4-c55d95a906a1.png" alt="" width="25" style="width: 25px; display: block; height: auto;">
+                                  </td>
+                                  <td valign="top">
+                                    <p style="margin: 0 0 3px; font-size: 16px; line-height: 19px; color: #000000; font-style: italic; font-weight: 700;">Михаил Вассер</p>
+                                    <p style="margin: 0 0 3px; font-size: 13.5px; line-height: 19px; color: #000000; font-style: italic; font-weight: 300;">наставник на курсе «Android-разработчик»</p>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <!--[endif]-->
+                          <!-- ДЕСКТОП -->
+                          <tr class="hidden">
+                            <td class="hidden" valign="center" style="padding: 0 15px 0 12px;">
+                              <img class="img270" src="https://email-images.mindbox.ru/Goldappleru/20482/6efc34f4-a5aa-4221-9bbc-11af4bf5addc.png" alt="GiftCards" width="250" style="width: 250px; height: auto; display: block;">
+                            </td>
+                            <td class="hidden" style="vertical-align: middle; padding: 0 12px 0 15px;">
+                              <div>
+                                <img src="https://email-images.mindbox.ru/Goldappleru/20482/59bfbc16-f52b-43d3-a0f4-2957f709be3f.png" alt="Пункт 2" width="280" style="width: 100%; height: auto; display: block;">
+                              </div>
+                              <div>
+                                <img src="https://email-images.mindbox.ru/Goldappleru/20482/59bfbc16-f52b-43d3-a0f4-2957f709be3f.png" alt="Разработка" width="280" style="width: 100%; height: auto; display: block;">
+                              </div>
+                              <p class="p-2" style="font-size: 16px; line-height: 22.4px; font-family: Helvetica, Arial, sans-serif; margin: 15px 0 20px; font-weight: 300; color: #000000; font-family: Helvetica, Arial, sans-serif;">
+                                Мобильные разработчики пишут код <span style="white-space: nowrap;">и&nbsp;добавляют</span> полезные функции. <span style="white-space: nowrap;">У&nbsp;нас</span> уникальный дизайн, красивые анимации, омниканальная программа лояльности <span style="white-space: nowrap;">и&nbsp;другие</span> фишки.
+                              </p>
+                              <table border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                  <td style="height: 2px; width: 150px;" bgcolor="#DCFF00">
+                                  </td>
+                                </tr>
+                              </table>
+                              <p class="p-2" style="font-size: 16px; line-height: 22.4px; font-family: Helvetica, Arial, sans-serif; margin: 15px 0 25px; font-weight: 300; color: #000000; font-family: Helvetica, Arial, sans-serif; font-style: italic;">&quot; Между экранами плавные переходы, грамотно реализована работа <span style="white-space: nowrap;">с&nbsp;навигацией</span> <span style="white-space: nowrap;">по&nbsp;кнопке</span> &laquo;назад&raquo; <span style="white-space: nowrap;">и&nbsp;много</span> дополнительных функций. Например, сканер штрих-кодов <span style="white-space: nowrap;">и&nbsp;интеграция</span> карт. &quot;
+                              </p>
+                              <table border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                  <td valign="top" style="padding-top: 3px; padding-right: 10px;">
+                                    <img src="https://email-images.mindbox.ru/Goldappleru/24527/37b4f8cc-7f68-40d1-90b4-c55d95a906a1.png" alt="" width="25" style="width: 25px; display: block; height: auto;">
+                                  </td>
+                                  <td valign="top">
+                                    <p style="margin: 0 0 3px; font-size: 16px; line-height: 19px; color: #000000; font-style: italic; font-weight: 700;">Михаил Вассер</p>
+                                    <p style="margin: 0 0 3px; font-size: 13.5px; line-height: 19px; color: #000000; font-style: italic; font-weight: 300;">наставник на курсе «Android-разработчик»</p>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <!--[if !mso]-->
+                          <tr><td height="80"></td></tr><!--[endif]-->
+                          <!--[if mso]><tr><td height="80"></td></tr><![endif]-->
+                        </table>
+                      </center>
+                      <!-- 3 -->
+                      <center>
+                        <table class="br" width="100%" border="0" cellpadding="0" cellspacing="0">
+                          <!-- МОБИЛКА -->
+                          <!--[if !mso]-->
+                          <tr>
+                            <td class="br padd-bottom br_padd" style="display: none; mso-hide: all; padding-bottom: 30px;">
+                              <img src="https://email-images.mindbox.ru/Goldappleru/20482/bc6bcc61-e5b3-419a-bd5f-3c2b9b30a37b.png" alt="GiftCards" width="100%" style="width: 100%; height: auto; display: block;">
+                            </td>
+                          </tr>
+                          <!--[endif]-->
+                          <tr class="br br_b br_padd">
+                            <td class="br" style="vertical-align: middle; text-align: left; padding: 0 10px 0 12px;">
+                              <div class="mob_title">
+                                <img class="img_d" src="https://email-images.mindbox.ru/Goldappleru/20482/a9eb38ae-fbc7-4b65-9205-3ca9c62afd20.png" alt="Пункт 3" width="100%" style="width: 100%; height: auto; display: block;">
+                                <!--[if !mso]-->
+                                <img class="img_m" src="https://email-images.mindbox.ru/Goldappleru/20482/3ab27669-300c-4b35-a19b-3e3958ad1309.png" alt="Пункт 3" width="100%" style="display: none; mso-hide: all;">
+                                <!--[endif]-->
+                              </div>
+                              <div>
+                                <img class="img_d" src="https://email-images.mindbox.ru/Goldappleru/20482/a9eb38ae-fbc7-4b65-9205-3ca9c62afd20.png" alt="Тестирование" width="100%" style="width: 100%; height: auto; display: block;">
+                                <!--[if !mso]-->
+                                <img class="img_m" src="https://email-images.mindbox.ru/Goldappleru/20482/3ab27669-300c-4b35-a19b-3e3958ad1309.png" alt="Тестирование" width="100%" style="display: none; mso-hide: all;">
+                                <!--[endif]-->
+                              </div>
+                              <p class="p-2" style="font-size: 16px; line-height: 22.4px; font-family: Helvetica, Arial, sans-serif; margin: 13px 0 30px; font-weight: 300; color: #000000; font-family: Helvetica, Arial, sans-serif;">Наши тестировщики ловят баги <span style="white-space: nowrap;">и&nbsp;следят,</span> чтобы всё работало без сбоев. Они воспроизводят шаги пользователей, фиксируют ошибки <span style="white-space: nowrap;">и&nbsp;помогают</span> нам выкатывать разные доработки. Под <span style="white-space: nowrap;">их&nbsp;контролем</span> <span style="white-space: nowrap;">всё&nbsp;&mdash;</span> <span style="white-space: nowrap;"></span>от&nbsp;выдачи поиска <span style="white-space: nowrap;">до&nbsp;корректной</span> работы промокодов.</p>
+                              <table border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                  <td style="height: 2px; width: 150px;" bgcolor="#DCFF00">
+                                  </td>
+                                </tr>
+                              </table>
+                              <p class="p-2" style="font-size: 16px; line-height: 22.4px; font-family: Helvetica, Arial, sans-serif; margin: 15px 0 25px; font-weight: 300; color: #000000; font-family: Helvetica, Arial, sans-serif; font-style: italic;">&quot; Здорово реализован поиск товаров <span style="white-space: nowrap;">в&nbsp;каталоге:</span> есть фильтры <span style="white-space: nowrap;">по&nbsp;брендам,</span> продуктам, типу волос <span style="white-space: nowrap;">и&nbsp;кожи,</span> цене. Порадовали рекомендации, которые строятся <span style="white-space: nowrap;">на&nbsp;личных</span> предпочтениях, просмотрах, покупках <span style="white-space: nowrap;">в&nbsp;онлайне</span> <span style="white-space: nowrap;">и&nbsp;офлайне..</span> &quot;
+                              </p>
+                              <table border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                  <td valign="top" style="padding-top: 3px; padding-right: 10px;">
+                                    <img src="https://email-images.mindbox.ru/Goldappleru/24527/37b4f8cc-7f68-40d1-90b4-c55d95a906a1.png" alt="" width="25" style="width: 25px; display: block; height: auto;">
+                                  </td>
+                                  <td valign="top">
+                                    <p style="margin: 0 0 3px; font-size: 16px; line-height: 19px; color: #000000; font-style: italic; font-weight: 700;">Кристина Пауэр</p>
+                                    <p style="margin: 0 0 3px; font-size: 13.5px; line-height: 19px; color: #000000; font-style: italic; font-weight: 300;">код-ревьюер на курсах <span style="white-space: nowrap;">по&nbsp;тестированию</span></p>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                            <td class="hidden" valign="top" style="padding: 0 12px 0 10px;">
+                              <img class="img270" src="https://email-images.mindbox.ru/Goldappleru/20482/bd39865b-3841-4aff-924b-1ef36ccd3c1f.png" alt="GiftCards" width="250" style="width: 250px; height: auto; display: block;">
+                            </td>
+                          </tr>
+                          <!--[if !mso]-->
+                          <tr class="hidden">
+                            <td class="hidden" height="100"></td>
+                          </tr><!--[endif]-->
+                          <!--[if mso]><tr><td height="100"></td></tr><![endif]-->
+                        </table>
+                      </center>
+                    </td>
+                  </tr>
+                  <!-- ЗАГОЛОВОК Наши рекомендации -->
+                  <tr>
+                    <td class="better_subtitle" align="center" style="padding: 0 12px 30px;">
+                      <img class="img_d" src="https://email-images.mindbox.ru/Goldappleru/20482/1b918610-c62e-42a6-895d-2d8b87856388.png" alt="Как улучшить приложение?" width="600" style="width: 100%; height: auto; display: block;">
+                      <!--[if !mso]-->
+                      <img class="img_m" src="https://email-images.mindbox.ru/Goldappleru/20482/8fc8f7db-8174-473e-a733-f8e7e2ab92da.png" alt="Как улучшить приложение?" width="100%" height="auto" style="display: none; mso-hide: all;">
+                      <!--[endif]-->
+                    </td>
+                  </tr>
+                  <!-- СООБЩЕНИЕ-2 -->
+                  <tr>
+                    <td align="left">
+                      <p class="message-2" style="font-size: 18px; font-weight: 400; line-height: 25.2px; color: #000000; font-family: Helvetica, Arial, sans-serif; margin: 30px 12px 60px;"> <span style="white-space: nowrap;">В&nbsp;Яндекс.Практикуме</span> студенты анализируют фичи, тестируют приложения <span style="white-space: nowrap;">и&nbsp;помогают</span> сделать <span style="white-space: nowrap;">их&nbsp;лучше.</span> <span style="white-space: nowrap;">Ты&nbsp;тоже</span> можешь так! Получи новые навыки <span style="white-space: nowrap;">и&nbsp;опыт</span> <span style="white-space: nowrap;">в&nbsp;IT,</span> научись создавать продукты, которые будут летать, <span style="white-space: nowrap;">а&nbsp;не&nbsp;виснуть.</span> Используй промокод, чтобы повысить свои знания <span style="white-space: nowrap;">или&nbsp;получить</span> новую профессию!</p>
+                    </td>
+                  </tr>
+                </table>
+                <!--[if mso]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </table>
+          <!--[if mso]></td></tr></table><![endif]-->
+        </td>
+      </tr>
+
+
+
+      <!-- ПРОМОКОД -->
+      <tr>
+        <td align="center" valign="top" style="background-color: #F4F4F4;">
+          <!--[if mso]><table border="0" width="1000" cellpadding="0" cellspacing="0"><tr><td align="center" width="1000"><![endif]-->
+          <table width="100%" border="0" cellpadding="0" cellspacing="0" style="max-width: 800px; background-color: #ffffff;">
+            <tr>
+              <td align="center" valign="top" style="padding: 0 20px">
+                <!--[if mso]><table border="0" width="754" cellpadding="0" cellspacing="0"><tr><td align="center" width="754"><![endif]-->
+                <table width="100%" border="0" cellpadding="0" cellspacing="0" style="max-width: 600px;">
+                  <tr>
+                    <td class="promo_padd" style="background-color: #E4CCFF; padding: 0 50px;">
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td>
+                            <p class="m2" style="font-size: 18px; font-weight: 300; line-height: 25px; letter-spacing: 0.25px; color: #000000; text-align: center; font-family: Helvetica, Arial, sans-serif; margin: 35px 0 20px;"> <!--[if !mso]>--><span style="white-space: nowrap; font-weight: 500;">получи&nbsp;скидку&nbsp;&minus;5%&nbsp;на&nbsp;обучение</span><!--[endif]--><!--[if mso]><span style="white-space: nowrap; font-weight: 700;">получи&nbsp;скидку&nbsp;&minus;5%&nbsp;на&nbsp;обучение</span><![endif]--> <!--[if !mso]>--><span style="white-space: nowrap; font-weight: 500;">в&nbsp;Яндекс.Практикум</span><!--[endif]--><!--[if mso]><span style="white-space: nowrap; font-weight: 700;">в&nbsp;Яндекс.Практикум</span><![endif]--> <span class="hide" > получи промокод <span style="white-space: nowrap;">на&nbsp;любую</span> профессию или навык</span> </p>
+                            <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; background-color: #FFFFFF; border: 1px dashed #000000;" align="center" valign="center">
+                              <tr>
+                                <td>
+                                  <p class="m3" style="font-size: 40px; line-height: 40px; color: #000000; text-align: center; font-family: Helvetica, Arial, sans-serif; margin: 15px 0;"> GOLDAPPLE5 </p>
+                                </td>
+                              </tr>
+                            </table>
+                            <p class="m4 hide" style="font-size: 14px; font-weight: 300; line-height: 20px; color: #000000; text-align: center; font-family: Helvetica, Arial, sans-serif; margin: 15px 0 25px;"> Промокод действует <span style="white-space: nowrap;">до&nbsp;30&nbsp;июня</span> <span style="white-space: nowrap;">и&nbsp;не&nbsp;распространяется</span> <span style="white-space: nowrap;">на&nbsp;курс</span> английского языка. <span style="white-space: nowrap;">Не&nbsp;суммируется</span> <span style="white-space: nowrap;">с&nbsp;другими</span> скидками <span style="white-space: nowrap;">или&nbsp;предложениями.</span> </p>
+                            <p class="show" style="font-size: 16px; font-weight: 300; line-height: 22px; color: #000000; text-align: center; font-family: Helvetica, Arial, sans-serif; margin: 15px 0 30px; display: none; mso-hide: all;"> используй промокод <span style="white-space: nowrap;">на&nbsp;любую</span> <span style="white-space: nowrap;">профессию&nbsp;или&nbsp;навык</span> </p>
+                          </td>
+                        </tr>
+                        <!-- КНОПКА -->
+                        <tr>
+                          <td class="b_wrapper1" align="center" style="padding: 0 0 40px;">
+                            <!--[if mso]><v:rect xmlns:v="urn:schemas-microsoft-com:vml" href="https://goldapple.ru/brands/xlash-cosmetics" target="_blank" stroke="f" fillcolor=#000000" style="font-size: 11px; width: 500px; height: 50px; v-text-anchor: middle;"><center><![endif]-->
+                            <a href="https://goldapple.ru/brands/xlash-cosmetics" class="b1" target="_blank" style="font-size: 11px; line-height: 50px; letter-spacing: 1.4px; font-weight: bold; text-align: center; white-space: nowrap; width: 500px; color: #ffffff; background-color: #000000; font-family: Helvetica, Arial, sans-serif; display: inline-block; text-decoration: none; -webkit-text-size-adjust: none;">ВЫБРАТЬ КУРС</a>
+                            <!--[if mso]></center></v:rect><![endif]-->
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p class="m5" style="font-size: 16px; font-weight: 300; line-height: 22px; letter-spacing: 0.0025em; color: #4D4D4D; text-align: center; font-family: Helvetica, Arial, sans-serif; margin: 20px 0 90px;"> Действует только один раз <span style="white-space: nowrap;">для&nbsp;авторизованных</span> пользователей. <span style="white-space: nowrap;">Суммируется&nbsp;со&nbsp;скидками</span> <span style="white-space: nowrap;">до&nbsp;&minus;40%.</span> </p>
+                    </td>
+                  </tr>
+                </table>
+                <!--[if mso]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </table>
+          <!--[if mso]></td></tr></table><![endif]-->
+        </td>
+      </tr>
+      <!-- ПОДВАЛ -->
+      <tr>
+        <td align="center" valign="top" style="background-color: #000000;">
+          <table class="f" width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td align="center" valign="top" style="border-bottom: 1px solid #333333; padding: 0 20px;">
+                <!--[if mso]><table border="0" width="740" cellpadding="0" cellspacing="0"><tr><td align="center" width="740"><![endif]-->
+                <table width="100%" border="0" cellpadding="0" cellspacing="0" style="max-width: 600px;">
+                  <tr>
+                    <td class="f_ask" valign="top" align="center" style="padding: 33px 0;">
+                      <p class="f_ask_text" style="font-size: 14px; line-height: 1; letter-spacing: 0.1px; color: #ffffff; font-family: Helvetica, Arial, sans-serif; margin: 0;"> Возникли вопросы? <span class="f_ask_text-br" style="white-space: nowrap;"> Напишите нам в <a class="f_ask_text" href="https://wa.me/78007707021" target="_blank" style="color: #ffffff; text-decoration: underline;">WhatsApp</a>
+                        </span>
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+                <!--[if mso]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="top" style="padding: 0 20px;">
+                <!--[if mso]><table border="0" width="740" cellpadding="0" cellspacing="0"><tr><td align="center" width="740"><![endif]-->
+                <table width="100%" border="0" cellpadding="0" cellspacing="0" style="max-width: 600px;">
+                  <tr>
+                    <td class="f_container" align="center" valign="top" style="padding: 35px 0 50px;">
+                      <table class="f_icons_d" width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td>
+                            <a href="https://www.youtube.com/user/GoldAppleRussia" target="_blank">
+                              <img class="f_icons_d" src="https://email-images.mindbox.ru/2f071441-bb9f-49a0-9dc1-48e3dedd72dc/5.png" alt="YouTube" width="auto" height="18" style="margin-right: 21px; float: left;">
+                            </a>
+                            <!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->
+                            <a href="https://www.tiktok.com/@goldapple" target="_blank">
+                              <img class="f_icons_d" src="https://email-images.mindbox.ru/690903/4648286/10.png" alt="tiktok" width="auto" height="18" style="margin-right: 21px; float: left;">
+                            </a>
+                            <!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->
+                            <a href="https://telegram.im/goldapple_ru" target="_blank">
+                              <img class="f_icons_d" src="https://email-images.mindbox.ru/285c9793-ef2c-4efb-9d6c-c8b7bbe0c924/1.png" alt="Telegram" width="auto" height="18" style="margin-right: 21px; float: left;">
+                            </a>
+                            <!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->
+                            <a href="https://vk.com/goldapple_ru" target="_blank">
+                              <img class="f_icons_d" src="https://email-images.mindbox.ru/ab49ed79-ce66-4871-aee3-a0e3cdbf6600/4.png" alt="ВКонтакте" width="auto" height="18" style="margin-right: 22px; float: left;">
+                            </a>
+                            <!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->
+                            <a href="https://wa.me/78007707021" target="_blank">
+                              <img class="f_icons_d" src="https://email-images.mindbox.ru/Goldappleru/10627/e389fe3e-927c-4f59-89be-b25b98dea224.png" alt="WhatsApp" width="auto" height="18" style="float: left;">
+                            </a>
+                          </td>
+                          <td style="text-align: right;">
+                            <a href="https://itunes.apple.com/ru/app/gold-apple/id1154436683?mt=8" target="_blank">
+                              <img class="f_icons_d" src="https://email-images.mindbox.ru/7fd1b17d-80c9-4234-b87d-39cb993415a9/3.png" alt="Приложение в App Store" width="auto" height="25">
+                            </a>
+                            <!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->
+                            <a href="https://play.google.com/store/apps/details?id=goldapple.ru.goldapple.customers&hl=ru" target="_blank">
+                              <img class="f_icons_d" src="https://email-images.mindbox.ru/76c1c047-ff92-4e26-8349-a7188f5b994f/2.png" alt="Приложение в Play Market" width="auto" height="25" style="margin-left: 40px; float: right;">
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                      <table class="f_icons_m" width="100%" border="0" cellpadding="0" cellspacing="0" style="display: none; mso-hide: all; text-align: center; padding-bottom: 25px;">
+                        <tr>
+                          <td>
+                            <a href="https://www.youtube.com/user/GoldAppleRussia" target="_blank">
+                              <img src="https://email-images.mindbox.ru/406575/3029846/15.png" alt="YouTube" width="19" height="19" style="margin: 0 12px;"></a>
+                            <a href="https://www.tiktok.com/@goldapple" target="_blank">
+                              <img src="https://email-images.mindbox.ru/690903/4648286/2.png" alt="Tiktok" width="19" height="19" style="margin: 0 12px;"></a>
+                            <a href="https://tlgg.ru/goldapple_ru" target="_blank">
+                              <img src="https://email-images.mindbox.ru/406575/3029846/19.png" alt="Telegram" width="19" height="19" style="margin: 0 12px;"></a>
+                            <a href="https://vk.com/goldapple_ru" target="_blank">
+                              <img src="https://email-images.mindbox.ru/406575/3029846/18.png" alt="ВКонтакте" width="19" height="19" style="margin: 0 12px;"></a>
+                            <a href="https://wa.me/78007707021" target="_blank">
+                              <img src="https://email-images.mindbox.ru/Goldappleru/10627/7d87b77b-a2f9-4426-a4d2-175508ad83f4.png" alt="WhatsApp" width="19" height="19" style="margin: 0 12px;"></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="padding:37px 0 55px;">
+                            <a href="https://goldapple.onelink.me/jLXC/553a6035" target="_blank">
+                              <img src="https://email-images.mindbox.ru/406575/3029846/4.png" alt="Приложение в App Store" width="105" height="29" style="margin: 0 22px;"></a>
+                            <a href="https://goldapple.onelink.me/jLXC/e35d68c" target="_blank">
+                              <img src="https://email-images.mindbox.ru/406575/3029846/3.png" alt="Приложение в Play Market" width="130" height="29" style="margin: 0 22px;"></a>
+                          </td>
+                        </tr>
+                      </table>
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td class="f_contacts" valign="top" style="padding-top: 40px;">
+                            <p class="f_phone_m" style="display: none; mso-hide: all; font-size: 13px; line-height: 1; color: #7F7F7F; font-family: Helvetica, Arial, sans-serif; margin: 0 0 10px;"> телефон call-центра</p>
+                            <a class="f_phone_number" href="tel:+78007707021" style="font-size: 25px; line-height: 1; color: #ffffff; font-family: Helvetica, Arial, sans-serif; text-decoration: none;">8 800 770 70 21</a>
+                            <p class="f_phone_d" style="font-size: 12px; line-height: 1.4; color: #E6E6E6; font-family: Helvetica, Arial, sans-serif; margin: 5px 0 0;"> круглосуточный телефон<br>call-центра</p>
+                          </td>
+                          <td class="f_links" align="right" valign="bottom" style="padding-top: 41px;">
+                            <p class="f_link_wrapper_1" style="font-size: 13px; letter-spacing: 0.1px; line-height: 1; font-family: Helvetica, Arial, sans-serif; margin: 0 0 10px;">
+                              <a class="f_link" href="https://goldapple.ru/stockists" target="_blank" style="color: #ffffff; text-decoration: none;"> список супермаркетов </a>
+                            </p>
+                            <p class="f_link_wrapper_2" style="font-size: 13px; letter-spacing: 0.1px; line-height: 1; font-family: Helvetica, Arial, sans-serif; margin: 0 0 10px;">
+                              <a class="f_link" href="https://goldapple.ru/documents#privacy-policy" target="_blank" style="color: #ffffff; text-decoration: none;"> условия пользовательского соглашения </a>
+                            </p>
+                            <p class="f_link_wrapper_3" style="font-size: 13px; letter-spacing: 0.1px; line-height: 1; font-family: Helvetica, Arial, sans-serif; margin: 0;">
+                              <a class="f_link" href="${ Message.UnsubscribeLink }" target="_blank" style="color: #ffffff; text-decoration: none;"> отписаться от рассылки </a>
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+                <!--[if mso]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </center>
+</body>
+</html>
